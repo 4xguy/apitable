@@ -100,3 +100,6 @@ eslint-results.sarif
 .nx
 
 /scripts/enterprise
+
+# Documentation created for new project (not part of APITable)
+/docs/

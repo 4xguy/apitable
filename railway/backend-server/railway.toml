@@ -1,0 +1,11 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "./Dockerfile"
+dockerContext = "../.."
+
+[deploy]
+startCommand = "java -jar application/build/libs/application.jar"
+healthcheckPath = "/api/v1/actuator/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
